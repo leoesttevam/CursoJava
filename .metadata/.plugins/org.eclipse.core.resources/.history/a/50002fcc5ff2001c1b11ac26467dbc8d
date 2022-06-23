@@ -1,0 +1,15 @@
+package heranca;
+
+import entities.Account;
+import entities.BusinessAccount;
+import entities.SavingAccount;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Account acc = new Account(1001, "Alex", 1000.0);
+		acc.saque(200.0);
+		System.out.println(acc.getSaldo());
+	}
+}

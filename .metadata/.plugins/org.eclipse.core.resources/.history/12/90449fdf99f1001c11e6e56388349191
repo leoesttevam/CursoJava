@@ -1,0 +1,10 @@
+package entities;
+
+import java.util.Date;
+
+public class OrderEnums {
+
+	private Integer id;
+	private Date status;
+	private OrderStatus;
+}

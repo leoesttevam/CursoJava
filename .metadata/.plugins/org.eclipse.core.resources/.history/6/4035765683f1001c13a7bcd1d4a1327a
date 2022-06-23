@@ -1,0 +1,24 @@
+package data;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Data {
+
+	public static void main(String[] args) throws ParseException {
+		
+		SimpleDateFormat data = new SimpleDateFormat("dd/MM/yyyy");
+		SimpleDateFormat dates = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		
+		//Instanciar com a data atual
+		Date x1 = new Date();
+		
+		Date d1 = data.parse("21/06/2022");
+		Date d2 = dates.parse("21/06/2022 13:54:08");
+		
+		System.out.println(dates.format(d1));
+		System.out.println(dates.format(d2));
+		System.out.println(x1);
+	}
+}

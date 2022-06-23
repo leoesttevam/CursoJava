@@ -1,0 +1,8 @@
+package enumeracao;
+
+public class ProgramEnums {
+
+	public static void main(String[] args) {
+		
+	}
+}

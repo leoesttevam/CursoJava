@@ -1,0 +1,35 @@
+package polismorfismo;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.enums.Color;
+
+public class Abstrato {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner  sc = new Scanner(System.in);
+		
+		System.out.println("Enter the number of shapes ");
+		int sh = sc.nextInt();
+		
+		for(int i = 1; i <= n; i++) {
+			System.out.println("Shapes #" + i + " data:");
+			System.out.println("Rectangle or Circle (r/c)?");
+			char ch = sc.next().charAt(0);
+			
+			System.out.println("Color (Black/Blue/Red):");
+			Color color = Color.valueOf(sc.next());
+			
+			if(ch == 'r') {
+				System.out.println("Width: ");
+				double lagura = sc.nextDouble();
+				System.out.println("Height: ");
+				double altura = sc.nextDouble();
+			}
+		}
+		sc.close();
+	}
+}

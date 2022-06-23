@@ -1,0 +1,53 @@
+package entities;
+
+public class Conta {
+
+	private int number = 8532;
+	private String holder;
+	private double saldo;
+	
+	public Conta() {
+	
+	}
+
+	
+
+	public Conta(int number, String holder, double saldo) {
+		super();
+		this.number = number;
+		this.holder = holder;
+		this.saldo = saldo;
+	}
+
+	public int getNumber() {
+		return number;
+	}
+
+	public String getHolder() {
+		return holder;
+	}
+
+	public void setHolder(String holder) {
+		this.holder = holder;
+	}
+
+	public double getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+	public double deposito(double deposit) {
+		 saldo += deposit;
+		 
+		 return saldoDps(deposito);
+	}
+	
+	public double saldoSqe(double saque) {
+		 saldo -= saque + 5;
+		 
+		 return saldoSqe(saque);
+	}
+}

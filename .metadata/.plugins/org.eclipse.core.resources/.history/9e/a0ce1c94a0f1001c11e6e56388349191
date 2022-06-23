@@ -1,0 +1,50 @@
+package entities;
+
+import entities.enums.WorkerLevel;
+
+public class Worker {
+
+	private String nome;
+	private WorkerLevel level;
+	private Double salario;
+	
+	private Departamento departamento;
+	
+	public Worker(){
+		
+	}
+
+	public Worker(String nome, WorkerLevel level, Double salario) {
+		this.nome = nome;
+		this.level = level;
+		this.salario = salario;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public WorkerLevel getLevel() {
+		return level;
+	}
+
+	public void setLevel(WorkerLevel level) {
+		this.level = level;
+	}
+
+	public Double getSalario() {
+		return salario;
+	}
+
+	public void setSalario(Double salario) {
+		this.salario = salario;
+	}
+	
+	public void addContrato() {
+		
+	}
+}

@@ -1,0 +1,30 @@
+package constThisSobrEncapsu;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Conta;
+
+public class ContaBancaria {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		Conta c1 = new Conta();
+		
+		c1.setNumber(8532);
+		c1.setHolder("Alex Green");
+		
+		char resp = 's';
+		
+		System.out.println("Is there na initial deposit (s/n) ?");
+		resp = sc.next().charAt(0);
+		
+		if(resp != 'n') {
+			System.out.println("Enter initial deposit value: ");
+		}
+		
+	}
+}
