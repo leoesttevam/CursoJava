@@ -1,0 +1,34 @@
+package model.entities;
+
+import java.util.Date;
+
+public class Resevation {
+
+	private Integer numeroQuarto;
+	private Date entrada;
+	private Date saida;
+	
+	public Resevation(Integer numeroQuarto, Date entrada, Date saida) {
+		this.numeroQuarto = numeroQuarto;
+		this.entrada = entrada;
+		this.saida = saida;
+	}
+
+	public Date getSaida() {
+		return saida;
+	}
+
+	public void setSaida(Date saida) {
+		this.saida = saida;
+	}
+
+	public Integer getNumeroQuarto() {
+		return numeroQuarto;
+	}
+
+	public Date getEntrada() {
+		return entrada;
+	}
+	
+	
+}

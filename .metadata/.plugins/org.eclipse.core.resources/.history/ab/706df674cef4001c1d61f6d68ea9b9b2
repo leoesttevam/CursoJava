@@ -1,0 +1,10 @@
+package model.entities;
+
+import java.util.Date;
+
+public class Resevation {
+
+	private Integer numeroQuarto;
+	private Date entrada;
+	private Date saida;
+}
