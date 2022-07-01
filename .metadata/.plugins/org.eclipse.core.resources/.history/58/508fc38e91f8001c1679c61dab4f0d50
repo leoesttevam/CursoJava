@@ -1,0 +1,8 @@
+package services;
+
+public class Snippet {
+	Scanner sc = new Scanner(System.in);
+		
+		PrintService ps = new PrintService()
+}
+

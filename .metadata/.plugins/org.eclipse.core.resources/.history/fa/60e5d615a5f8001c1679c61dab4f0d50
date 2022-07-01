@@ -1,0 +1,35 @@
+package application;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import entities.Products;
+import services.CalculoService;
+
+public class GProducts {
+
+	public static void main(String[] args) {
+		
+		List<Products> list= new ArrayList<Products>();
+		
+		String path = "C:";
+		
+		try(BufferedReader br = new BufferedReader(new FileReader(path))){
+			
+			String line = br.readLine();
+			while(line != null) {
+				list.add(Integer.parseInt(line), null);
+				line = br.readLine();
+			}
+			
+			Integer x = CalculoService.max(list);
+			System.out.println("Max: ");
+			System.out.println();
+		}catch (IOException e) {
+			System.out.println("Error: " + e.getMessage());
+		}
+	}
+}

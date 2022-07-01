@@ -1,8 +1,0 @@
-package entities;
-
-public class Employee {
-
-	private String nome;
-	private Integer horas;
-	private Double valorHora;
-}

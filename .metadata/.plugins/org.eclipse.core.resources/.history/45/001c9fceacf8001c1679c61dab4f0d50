@@ -1,0 +1,28 @@
+package application;
+
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Sets {
+
+	public static void main(String[] args) {
+		
+		//HashSet imprime fora de ordem
+		//TreeSet imprime em ordem alfabetica
+		//LinkedHashSet mantem em ordem de impressão
+		Set<String> set = new TreeSet<String>();
+		
+		set.add("TV");
+		set.add("Notebook");
+		set.add("Tablet");
+		
+		set.removeIf(x -> x.length() >= 3);
+		
+		System.out.println(set.contains("Notebook"));
+		
+		for(String p : set) {
+			System.out.println(p);
+		}
+		
+	}
+}

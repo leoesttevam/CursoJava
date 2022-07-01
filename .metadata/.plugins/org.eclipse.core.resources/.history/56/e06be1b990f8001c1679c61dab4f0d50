@@ -1,0 +1,20 @@
+package services;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PrintService {
+
+	List<Integer> list = new ArrayList<Integer>();
+	
+	public void adValue(Integer value) {
+		list.add(value);
+	}
+	
+	public Integer first() {
+		if(list.isEmpty()) {
+			throw new IllegalAccessException("List is empty");
+		}
+		return list.get(0);
+	}
+}
