@@ -1,0 +1,18 @@
+package model.entities;
+
+import java.util.List;
+
+import entities.Products;
+
+public class ProductService {
+
+	public double filteredSum(List<Products> list) {
+		double soma = 0.0;
+		for(Products p : list) {
+			if(p.getNome().charAt(0) == 'T') {
+				soma += p.getPrice();
+			}
+		}
+		return soma;
+	}
+}

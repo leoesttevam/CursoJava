@@ -1,0 +1,15 @@
+package util;
+
+import java.util.function.Predicate;
+
+import entities.Products;
+
+public class ProductPredicate implements Predicate<Products>{
+
+	@Override
+	public boolean test(Products t) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}
